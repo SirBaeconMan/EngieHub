@@ -838,7 +838,7 @@ local function QVMAOZ_fake_script() -- Bypasses_2.BypassButtonHandler
 		
 	end)
 	b2.Activated:Connect(function()
-		if game:GetService('Players').LocalPlayer:GetRoleInGroup(8879517) == 'Whitelisted' then
+	if game:GetService('Players').LocalPlayer:GetRoleInGroup(8879517) == 'Whitelisted' or 'pro engineer' or 'game engineer' or 'engineer gaming' then
 			local msg = Instance.new('Hint')
 		else
 			local msg = Instance.new("Message")
@@ -855,7 +855,7 @@ coroutine.wrap(QVMAOZ_fake_script)()
 local function PKTRMOA_fake_script() -- MainGui.GuiController 
 	local script = Instance.new('LocalScript', MainGui)
 
-	if game:GetService('Players').LocalPlayer:GetRoleInGroup(8879517) == 'Whitelisted' then
+	if game:GetService('Players').LocalPlayer:GetRoleInGroup(8879517) == 'Whitelisted' or 'pro engineer' or 'game engineer' or 'engineer gaming' then
 		local msg = Instance.new('Hint')
 		msg.Text = "You're whitelisted! Loading script..."
 		wait(3)
