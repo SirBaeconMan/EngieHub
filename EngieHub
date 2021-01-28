@@ -838,15 +838,6 @@ local function QVMAOZ_fake_script() -- Bypasses_2.BypassButtonHandler
 		
 	end)
 	b2.Activated:Connect(function()
-	if game:GetService('Players').LocalPlayer:GetRoleInGroup(8879517) == 'Whitelisted' or 'pro engineer' or 'game engineer' or 'engineer gaming' then
-			local msg = Instance.new('Hint')
-		else
-			local msg = Instance.new("Message")
-			msg.Text = "lmao ur not whitelisted, get rekt skid"
-			wait(3)
-			msg:Destroy()
-			script.Parent:Destroy()
-		end
 		loadstring(game:HttpGet(('https://pastebin.com/raw/YvBKNpfk'),true))()
 	end)
 	
@@ -854,19 +845,6 @@ end
 coroutine.wrap(QVMAOZ_fake_script)()
 local function PKTRMOA_fake_script() -- MainGui.GuiController 
 	local script = Instance.new('LocalScript', MainGui)
-
-	if game:GetService('Players').LocalPlayer:GetRoleInGroup(8879517) == 'Whitelisted' or 'pro engineer' or 'game engineer' or 'engineer gaming' then
-		local msg = Instance.new('Hint')
-		msg.Text = "You're whitelisted! Loading script..."
-		wait(3)
-		msg:Destroy()
-	else
-		local msg = Instance.new("Message")
-		msg.Text = "lmao ur not whitelisted, get rekt skid"
-		wait(3)
-		msg:Destroy()
-		script.Parent:Destroy()
-	end
 	
 	local HackSelector = script.Parent.Frame.HackSelector
 	local CommandButton = HackSelector.Commands
